@@ -3,9 +3,10 @@ using UnityEngine;
 public class SpawnerManager : MonoBehaviour
 {
     [SerializeField] private float SpawnTime = 5f;
-    [SerializeField] private float currentTime = 0f;
     [SerializeField] private Transform[] spawnPosition;//Asignar en el inspector, posiciones.
     [SerializeField] private Enemy[] enemy;//Asignar en el inspector, enemigos
+
+    private float currentTime = 0f;
 
     void Start()
     {
@@ -30,21 +31,16 @@ public class SpawnerManager : MonoBehaviour
         {
             case 0:
                 Instantiate(enemy[EnemySelect].gameObject, spawnPosition[rangeSpawner].transform.position, Quaternion.identity);
-                Debug.Log("Enemy: " + EnemySelect + ", Punto: " + rangeSpawner);
                 break;
             case 1:
                 Instantiate(enemy[EnemySelect].gameObject, spawnPosition[rangeSpawner].transform.position, Quaternion.identity);
-                Debug.Log("Enemy: " + EnemySelect + ", Punto: " + rangeSpawner);
                 break;
             case 2:
                 Instantiate(enemy[EnemySelect].gameObject, spawnPosition[rangeSpawner].transform.position, Quaternion.identity);
-                Debug.Log("Enemy: " + EnemySelect + ", Punto: " + rangeSpawner);
                 break;
             case 3:
                 Instantiate(enemy[EnemySelect].gameObject, spawnPosition[rangeSpawner].transform.position, Quaternion.identity);
-                Debug.Log("Enemy: " + EnemySelect + ", Punto: " + rangeSpawner);
                 break;
         }
-        
     }
 }

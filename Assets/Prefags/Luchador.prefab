@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1977921342952333929}
   - component: {fileID: 1795906957580824250}
   - component: {fileID: 1285638373188399538}
+  - component: {fileID: 7965749914271604612}
   m_Layer: 0
   m_Name: Luchador
   m_TagString: Enemy
@@ -103,9 +104,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 5
   targetDistance: 5
+  attackSpeed: 1
+  push: 5
   targetPlayer: {fileID: 0}
   OnFollow: 1
   OnFollowDistance: 0
+  proyectil: {fileID: 8939947992666625753, guid: e8255325fda616c47b8cff9e6e8676d3, type: 3}
 --- !u!50 &1285638373188399538
 Rigidbody2D:
   serializedVersion: 5
@@ -132,4 +136,50 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
+--- !u!61 &7965749914271604612
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7902866599370961470}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

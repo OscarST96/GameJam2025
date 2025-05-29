@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float velocity = 5f;
     [SerializeField] private float targetDistance = 5f;
     [SerializeField] private float attackSpeed = 1;
+    [SerializeField] private float push = 1;
     [SerializeField] private Player targetPlayer;
     [SerializeField] private bool OnFollow = false; 
     [SerializeField] private bool OnFollowDistance = false;
@@ -14,11 +15,14 @@ public class Enemy : MonoBehaviour
     private float currentTimeAttack = 0;
     private Rigidbody2D rb2D;
     private bool attackDistance;
+    private bool attack;
+    private bool isMovement;
     
     private void Start()
     {
-        targetPlayer = FindFirstObjectByType<Player>();
+        targetPlayer = FindFirstObjectByType<Player>(); 
         rb2D = GetComponent<Rigidbody2D>();
+        isMovement = true;
     }
     private void Update()
     {
@@ -43,15 +47,39 @@ public class Enemy : MonoBehaviour
             FollowGoalkeeper();
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        attack = false;
+        if (collision.collider.tag == "Player")
+        {
+            attack = true;
+            Attack();
+            Vector2 pushDirection = transform.right.normalized;
+            Rigidbody2D playerRb = collision.collider.GetComponent<Rigidbody2D>();
+            if (!targetPlayer.isAttack)
+            {
+                if (playerRb != null)
+                {
+                    playerRb.AddForce(pushDirection * push, ForceMode2D.Impulse);
+                    Debug.Log("Colisión con Player, empujando");
+                    
+                    Invoke("TargetSpeedZero", 0.5f);
+                }
+            }
+        }
+    }
     #region Metodos de Comportamiento de Dezplazamiento
     private void Follow()
     {
-        Vector2 direction = (targetPlayer.transform.position - transform.position).normalized;
-        rb2D.linearVelocity = direction * velocity;
+        if (isMovement)
+        {
+            Vector2 direction = (targetPlayer.transform.position - transform.position).normalized;
+            rb2D.linearVelocity = direction * velocity;
+        }
     }
     private void FollowGoalkeeper()
     {
-        Vector3 direction = targetPlayer.transform.position - transform.position;  // Vector hacia el objetivo
+        Vector2 direction = targetPlayer.transform.position - transform.position;  // Vector hacia el objetivo
         float distance = direction.magnitude;
 
         if (distance > targetDistance)
@@ -69,11 +97,17 @@ public class Enemy : MonoBehaviour
             rb2D.linearVelocity = Vector3.zero; // Para cuando ya está lo suficientemente cerca
             attackDistance = true;
         }
-
     }
     #endregion
 
     #region Metodos de Comportamiento de Ataque
+    private void Attack()
+    {
+        if (attack)
+        {
+            isMovement = false;
+        }
+    }
     private void OnAttackDistance()
     {
         if (attackDistance)
@@ -82,4 +116,12 @@ public class Enemy : MonoBehaviour
         }
     }
     #endregion
+    public void SpeedZero()
+    {
+        rb2D.linearVelocity = Vector2.zero;
+    }
+    public void TargetSpeedZero()
+    {
+        targetPlayer.SpeedZero();
+    }
 }

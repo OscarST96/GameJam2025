@@ -9,6 +9,8 @@ public class InputReader : MonoBehaviour
     public static event Action OnChangeColor;
     public void OnMoveInput(InputAction.CallbackContext context)
     {
+        if (Time.timeScale == 0f) return;
+
         if (context.performed || context.canceled)
         {
             OnMove?.Invoke(context.ReadValue<Vector2>());
@@ -16,6 +18,8 @@ public class InputReader : MonoBehaviour
     }
     public void OnJumpInput(InputAction.CallbackContext context)
     {
+        if (Time.timeScale == 0f) return;
+
         if (context.performed)
         {
             OnJump?.Invoke();
@@ -23,6 +27,8 @@ public class InputReader : MonoBehaviour
     }
     public void OnChangeColorInput(InputAction.CallbackContext context)
     {
+        if (Time.timeScale == 0f) return;
+
         if (context.performed)
         {
             OnChangeColor?.Invoke();

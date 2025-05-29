@@ -2,15 +2,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject panelOpciones;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        panelOpciones.SetActive(false);
+    }
+    public void Opciones()
+    {
+        panelOpciones.SetActive(true);
+        Time.timeScale = 0f;
+    }
+    public void Volver()
+    {
+        panelOpciones.SetActive(false);
+        Time.timeScale = 1f;
     }
 }

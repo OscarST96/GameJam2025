@@ -3,12 +3,20 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private ColorsSO colorData;
+
+    [SerializeField] private ColorsSO whiteSO;
+    [SerializeField] private ColorsSO blackSO;
+
+    private ColorsSO assignedColorSO;
 
     private void Start()
     {
-        colorData.currentColor = Random.value > 0.5f ? Color.white : Color.black;
+        assignedColorSO = Random.value > 0.5f ? whiteSO : blackSO;
 
-        spriteRenderer.color = colorData.currentColor;
+        spriteRenderer.color = assignedColorSO.currentColor;
+    }
+    public Color GetCurrentColor()
+    {
+        return assignedColorSO.currentColor;
     }
 }

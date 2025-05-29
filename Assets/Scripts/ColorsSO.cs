@@ -4,4 +4,5 @@ using UnityEngine;
 public class ColorsSO : ScriptableObject
 {
     public Color currentColor = Color.white;
+
 }

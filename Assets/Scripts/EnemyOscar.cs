@@ -1,13 +1,13 @@
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class Enemy : MonoBehaviour
+public class EnemyOscar : MonoBehaviour
 {
     [SerializeField] private float velocity = 5f;
     [SerializeField] private float targetDistance = 5f;
     [SerializeField] private float attackSpeed = 1;
     [SerializeField] private float push = 1;
-    [SerializeField] private Player targetPlayer;
+    [SerializeField] private PlayerExamplo targetPlayer;
     [SerializeField] private bool OnFollow = false; 
     [SerializeField] private bool OnFollowDistance = false;
     [SerializeField] private Arrow proyectil;//Asignar en el inspector.
@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     
     private void Start()
     {
-        targetPlayer = FindFirstObjectByType<Player>(); 
+        targetPlayer = FindFirstObjectByType<PlayerExamplo>(); 
         rb2D = GetComponent<Rigidbody2D>();
         isMovement = true;
     }

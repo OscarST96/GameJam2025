@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerExamplo : MonoBehaviour
 {
     public bool isAttack;
     public float push;

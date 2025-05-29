@@ -7,13 +7,13 @@ public class Arrow : MonoBehaviour
     [SerializeField] private float push = 1f;
 
     private Rigidbody2D rb2D;
-    private Player directionPlayer;
+    private PlayerExamplo directionPlayer;
     private Vector2 direction;
 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        directionPlayer = FindFirstObjectByType<Player>();
+        directionPlayer = FindFirstObjectByType<PlayerExamplo>();
         direction = (directionPlayer.transform.position - transform.position).normalized;
         Destroy(this.gameObject, timeDuraction);
     }

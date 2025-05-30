@@ -7,6 +7,8 @@ public class InputReader : MonoBehaviour
     public static event Action<Vector2> OnMove;
     public static event Action OnJump;
     public static event Action OnChangeColor;
+    public static event Action OnAttack; 
+
     public void OnMoveInput(InputAction.CallbackContext context)
     {
         if (Time.timeScale == 0f) return;
@@ -32,6 +34,15 @@ public class InputReader : MonoBehaviour
         if (context.performed)
         {
             OnChangeColor?.Invoke();
+        }
+    }
+    public void OnAttackInput(InputAction.CallbackContext context)
+    {
+        if (Time.timeScale == 0f) return;
+
+        if (context.performed)
+        {
+            OnAttack?.Invoke();
         }
     }
 }

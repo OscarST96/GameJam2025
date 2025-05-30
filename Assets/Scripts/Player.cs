@@ -15,6 +15,9 @@ public class Player : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private ColorsSO colorData;
 
+    [Header("Ataque")]
+    [SerializeField] private Attack attackScript;
+    private bool facingRight = true;
     private void Awake()
     {
         RigidBody2D = GetComponent<Rigidbody2D>();
@@ -24,12 +27,16 @@ public class Player : MonoBehaviour
         InputReader.OnMove += OnMove;
         InputReader.OnJump += OnJump;
         InputReader.OnChangeColor += OnChangeColor;
+        InputReader.OnAttack += OnAttack;
+
     }
     private void OnDisable()
     {
         InputReader.OnMove -= OnMove;
         InputReader.OnJump -= OnJump;
         InputReader.OnChangeColor -= OnChangeColor;
+        InputReader.OnAttack -= OnAttack;
+
     }
     private void Start()
     {
@@ -38,6 +45,9 @@ public class Player : MonoBehaviour
     private void Update()
     {
         RigidBody2D.linearVelocity = new Vector2(direction.x * velocity, RigidBody2D.linearVelocity.y);
+
+        if (direction.x > 0) facingRight = true;
+        else if (direction.x < 0) facingRight = false;
     }
     private void OnMove(Vector2 inputDirection)
     {
@@ -74,4 +84,9 @@ public class Player : MonoBehaviour
 
         spriteRenderer.color = colorData.currentColor;
     }
+    private void OnAttack()
+    {
+        attackScript.DoAttack(facingRight);
+    }
+
 }

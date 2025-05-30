@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c7d54e1ddc4b74b9ef9b009d8245b8, type: 3}
   m_Name: SFXVolume
   m_EditorClassIdentifier: 
-  mixerParameter: AudioGolpe
+  mixerParameter: Ambiente
   volume: 1

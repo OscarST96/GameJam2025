@@ -14,6 +14,10 @@ public class AudioSliderController : MonoBehaviour
         UpdateVolume(slider.value);
         slider.onValueChanged.AddListener(UpdateVolume);
     }
+    private void Update()
+    {
+        slider.onValueChanged.AddListener(UpdateVolume);
+    }
 
     private void OnDisable()
     {

@@ -65,4 +65,43 @@ public class PlayerLife : MonoBehaviour
         whiteLifeBar.fillAmount = (float)whiteLife / maxLife;
         blackLifeBar.fillAmount = (float)blackLife / maxLife;
     }
+    public void IncreaseWhiteLife()
+    {
+        whiteLife = Mathf.Clamp(whiteLife + 1, minLife, maxLife);
+        CheckLoseCondition();
+        UpdateLifeBars();
+    }
+
+    public void DecreaseBlackLife()
+    {
+        blackLife = Mathf.Clamp(blackLife - 1, minLife, maxLife);
+        UpdateLifeBars();
+    }
+
+    public void IncreaseBlackLife()
+    {
+        blackLife = Mathf.Clamp(blackLife + 1, minLife, maxLife);
+        CheckLoseCondition();
+        UpdateLifeBars();
+    }
+
+    public void DecreaseWhiteLife()
+    {
+        whiteLife = Mathf.Clamp(whiteLife - 1, minLife, maxLife);
+        UpdateLifeBars();
+    }
+
+    public Color GetCurrentColor()
+    {
+        return playerColor.currentColor;
+    }
+
+    private void CheckLoseCondition()
+    {
+        if (whiteLife >= maxLife || blackLife >= maxLife)
+        {
+            SceneManager.LoadScene("YouLoose");
+        }
+    }
+
 }

@@ -120,7 +120,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -148,6 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e95aa9f2b3dc8cc4f98cfe4b73d1210e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whiteSO: {fileID: 11400000, guid: c50d47755e282874b927fd6a740886e2, type: 2}
+  blackSO: {fileID: 11400000, guid: c355d71139f1f654389e65f6f1bbc13f, type: 2}
 --- !u!50 &9169065029731716647
 Rigidbody2D:
   serializedVersion: 5

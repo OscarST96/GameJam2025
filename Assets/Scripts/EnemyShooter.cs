@@ -7,37 +7,73 @@ public class EnemyShooter : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float bulletSpeed = 5f;
     [SerializeField] private float shootInterval = 2f;
-    [SerializeField] private float shootDuration = 10f;
+
+    [Header("Movement Settings")]
+    [SerializeField] private float minX = -8.10f;
+    [SerializeField] private float maxX = 8.20f;
+    [SerializeField] private float baseSpeed = 2f;
+
+    private float moveDirection = 1f;
+    private float elapsed;
 
     private void Start()
     {
         StartCoroutine(ShootingRoutine());
     }
 
-    private IEnumerator ShootingRoutine()
+    private void Update()
     {
-        float elapsed = 0f;
+        elapsed += Time.deltaTime;
 
-        while (elapsed < shootDuration)
+        float currentSpeed = baseSpeed;
+        if (elapsed >= 10f)
         {
-            Shoot6Directions();
-            yield return new WaitForSeconds(shootInterval);
-            elapsed += shootInterval;
+            currentSpeed *= 2.5f;
+        }
+
+        transform.position += new Vector3(moveDirection * currentSpeed * Time.deltaTime, 0f, 0f);
+
+        if (transform.position.x < minX)
+        {
+            transform.position = new Vector3(minX, transform.position.y, transform.position.z);
+            moveDirection = 1f;
+        }
+        else if (transform.position.x > maxX)
+        {
+            transform.position = new Vector3(maxX, transform.position.y, transform.position.z);
+            moveDirection = -1f;
+        }
+
+        if (elapsed >= 30f)
+        {
+            Destroy(gameObject);
         }
     }
 
-    private void Shoot6Directions()
+    private IEnumerator ShootingRoutine()
     {
-        float[] angles = { 240, 255, 270, 285, 300, 315 };
+        while (elapsed < 30f)
+        {
+            ShootBullets();
+            yield return new WaitForSeconds(shootInterval);
+        }
+    }
+
+    private void ShootBullets()
+    {
+        float[] angles = { 210, 220, 230, 240, 250, 260, 270, 280, 290, 300, 310 };
 
         foreach (float angle in angles)
         {
             float rad = angle * Mathf.Deg2Rad;
             Vector2 dir = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad)).normalized;
 
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            Vector2 offset = dir * 0.2f;
+            GameObject bullet = Instantiate(bulletPrefab, (Vector2)transform.position + offset, Quaternion.identity);
+
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            rb.linearVelocity = dir * bulletSpeed;
+            if (rb != null)
+                rb.linearVelocity = dir * bulletSpeed;
         }
     }
 }

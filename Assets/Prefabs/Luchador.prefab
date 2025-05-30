@@ -106,7 +106,7 @@ MonoBehaviour:
   targetDistance: 5
   attackSpeed: 1
   push: 5
-  targetPlayer: {fileID: 0}
+  targetPlayer: {fileID: 7446742447577274650, guid: 7e8bac80980cc0641a25435eab23de15, type: 3}
   OnFollow: 1
   OnFollowDistance: 0
   proyectil: {fileID: 8939947992666625753, guid: e8255325fda616c47b8cff9e6e8676d3, type: 3}

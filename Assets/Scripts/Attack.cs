@@ -1,32 +1,51 @@
-using UnityEngine;
 using DG.Tweening;
+using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
+    [Header("Ataque")]
     [SerializeField] private GameObject attackGO;
-    [SerializeField] private float attackScale = 1.5f;
-    [SerializeField] private float attackDuration = 0.3f;
+    [SerializeField] private float attackScale = 2f;
+    [SerializeField] private float attackDuration = 0.2f;
 
-    private Vector3 rightOffset = new Vector3(1, 0, 0);
-    private Vector3 leftOffset = new Vector3(-1, 0, 0);
+    [Header("Offsets centrados")]
+    private Vector3 rightOffset = new Vector3(0f, 0f, 0f);
+    private Vector3 leftOffset = new Vector3(0f, 0f, 0f);
+
+    [Header("Color del puño")]
+    [SerializeField] private SpriteRenderer attackRenderer;
+    [SerializeField] private ColorsSO colorData;
+
+    private Vector3 originalScale;
+    private bool isAttacking = false;
+
+    private void Start()
+    {
+        originalScale = attackGO.transform.localScale;
+    }
 
     public void DoAttack(bool facingRight)
     {
-        if (attackGO == null) return;
+        if (isAttacking) return;
 
-        // Posicionar el ataque hacia la dirección correcta
+        isAttacking = true;
+
+        attackGO.transform.localScale = originalScale;
         attackGO.transform.localPosition = facingRight ? rightOffset : leftOffset;
-        attackGO.transform.localScale = Vector3.one;
+
+        attackRenderer.color = colorData.currentColor;
+
+        float direction = facingRight ? 1f : -1f;
 
         attackGO.SetActive(true);
 
-        // Animación con DOTween
-        attackGO.transform.DOScaleX(attackScale, attackDuration)
+        attackGO.transform.DOScaleX(originalScale.x * attackScale * direction, attackDuration)
             .SetEase(Ease.OutBounce)
             .OnComplete(() =>
             {
-                attackGO.transform.localScale = Vector3.one;
+                attackGO.transform.localScale = originalScale;
                 attackGO.SetActive(false);
+                isAttacking = false;
             });
     }
 }

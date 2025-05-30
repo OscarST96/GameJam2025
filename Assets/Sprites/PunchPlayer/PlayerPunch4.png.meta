@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ef4932a67f3932549bd80f32b7be5ff0
+guid: 38a014f531ca56b4bbff70c75144b069
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3826666171272373348
-    second: Captura de pantalla 2025-05-29 152853_0
+      213: -4188688709605392621
+    second: PlayerPunch4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,23 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Captura de pantalla 2025-05-29 152853_0
+      name: PlayerPunch4_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 119
         y: 0
-        width: 295
-        height: 184
-      alignment: 9
-      pivot: {x: 0.0011303328, y: 0.49886388}
+        width: 231
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 464a1b4bb9c0b1530800000000000000
-      internalID: 3826666171272373348
+      spriteID: 31ff74dafc9ced5c0800000000000000
+      internalID: -4188688709605392621
       vertices: []
       indices: 
       edges: []
@@ -164,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ee3f35c157836604cb5773d50292000a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Captura de pantalla 2025-05-29 152853_0: 3826666171272373348
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

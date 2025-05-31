@@ -36,7 +36,15 @@ public class Attack : MonoBehaviour
 
         attackGO.SetActive(true);
 
-        attackGO.transform.DOScaleX(originalScale.x * attackScale * direction, attackDuration)
+        // Nueva escala destino en X y Y
+        Vector3 targetScale = new Vector3(
+            originalScale.x * attackScale * direction,
+            originalScale.y * attackScale,
+            originalScale.z
+        );
+
+        // Animamos en ambos ejes (X y Y)
+        attackGO.transform.DOScale(targetScale, attackDuration)
             .SetEase(Ease.OutBounce)
             .OnComplete(() =>
             {

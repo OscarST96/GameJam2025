@@ -26,7 +26,17 @@ public class Enemy : MonoBehaviour
     {
         if (player != null && !isBeingDestroyed)
         {
+            Vector3 direction = player.position - transform.position;
             transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+
+            if (direction.x > 0 && transform.localScale.x < 0)
+            {
+                spriteRenderer.flipX = false;
+            }
+            else if (direction.x < 0 && transform.localScale.x > 0)
+            {
+                spriteRenderer.flipX = true;
+            }
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -56,7 +66,7 @@ public class Enemy : MonoBehaviour
             Debug.Log("puñetazo");
             isBeingDestroyed = true;
 
-            ScoreManager.Instance.AddScore(1000);
+            ScoreManager.Instance.AddScore(100);
 
             Destroy(gameObject);
         }

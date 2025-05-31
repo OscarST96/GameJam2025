@@ -20,12 +20,16 @@ public class EnemyShooter : MonoBehaviour
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI timerText;
 
+    private SpriteRenderer spriteRenderer;
+
     private float moveDirection = 1f;
     private float elapsed;
+    private bool movingRight = true;
 
     private void Start()
     {
         StartCoroutine(ShootingRoutine());
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -57,6 +61,23 @@ public class EnemyShooter : MonoBehaviour
         if (elapsed >= enemyLifetime)
         {
             SceneManager.LoadScene("YouWin");
+        }
+
+        if (movingRight)
+        {
+            if (transform.position.x >= maxX)
+            {
+                movingRight = false;
+                spriteRenderer.flipX = false;
+            }
+        }
+        else
+        {
+            if (transform.position.x <= minX)
+            {
+                movingRight = true;
+                spriteRenderer.flipX = true;
+            }
         }
     }
 

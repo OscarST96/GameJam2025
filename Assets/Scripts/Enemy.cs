@@ -31,18 +31,22 @@ public class Enemy : MonoBehaviour
     {
         if (isBeingDestroyed) return; // Ya está en proceso de destrucción
 
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("creceeeeee");
+            isBeingDestroyed = true;
+            transform.DOScale(transform.localScale * scaleOnHit, scaleTime).OnComplete(() => Destroy(gameObject));
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (isBeingDestroyed) return; // Ya está en proceso de destrucción
+
         if (collision.gameObject.CompareTag("Punch"))
         {
             Debug.Log("puñoooooooooo");
             isBeingDestroyed = true;
             Destroy(gameObject);
-        }
-        else if (collision.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("creceeeeee");
-            isBeingDestroyed = true;
-            transform.DOScale(transform.localScale * scaleOnHit, scaleTime)
-                     .OnComplete(() => Destroy(gameObject));
         }
     }
 

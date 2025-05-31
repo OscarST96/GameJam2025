@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!243 &-8623562550380317977
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Music
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: a0a03fe0b76b71f49afecdd986332a48
+  m_Children: []
+  m_Volume: 962884a655a49e341b55ad7ac1d866ad
+  m_Pitch: 241ed08e7cb7665418a3e935957624b9
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -2899722594328050370}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &-4709466386334712137
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -10,6 +29,20 @@ AudioMixerEffectController:
   m_EffectID: ee7934e702b6c3541accc07ee6f9faa0
   m_EffectName: Attenuation
   m_MixLevel: 9c813aaafedff9b4e8e81eb1dd1ed4af
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &-2899722594328050370
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 3847c6797c3905a499b24fdfa145f3d5
+  m_EffectName: Attenuation
+  m_MixLevel: f8e77c706b92e3042a4ce0b08c068ec9
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
@@ -53,10 +86,13 @@ AudioMixerController:
     name: Ambiente
   - guid: 6f9702a74071dbd4f9062f47a0881ee2
     name: Master
+  - guid: 962884a655a49e341b55ad7ac1d866ad
+    name: Music
   m_AudioMixerGroupViews:
   - guids:
     - f67fb41ee4dc4454dbb879dc38861669
     - 3138a616b95ace5479e7c6cdd2bda7fb
+    - a0a03fe0b76b71f49afecdd986332a48
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -70,6 +106,7 @@ AudioMixerGroupController:
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: f67fb41ee4dc4454dbb879dc38861669
   m_Children:
+  - {fileID: -8623562550380317977}
   - {fileID: -2883938185426000546}
   m_Volume: 6f9702a74071dbd4f9062f47a0881ee2
   m_Pitch: 4f8321678f517eb49a83113aa999d2ea

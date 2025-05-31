@@ -2226,7 +2226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 44.998, y: -14}
+  m_AnchoredPosition: {x: 44.997986, y: -14}
   m_SizeDelta: {x: -717.02, y: -273.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200482888
@@ -2997,8 +2997,8 @@ Canvas:
   m_GameObject: {fileID: 1417405223}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -3168,13 +3168,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'John Smith Ayudante Quispe
 
-    Velez
+    Fabricio Antonio Velez Bazan
 
     Oscar
+    Junior Coronel Mendoza
 
-    Ricardo
+    Ricardo Andres Ezpino Blas
 
-    Erwin'
+    Erwin Amir Farfan
+    Cabada'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67c7d54e1ddc4b74b9ef9b009d8245b8, type: 3}
-  m_Name: MusicVolume
+  m_Name: Master
   m_EditorClassIdentifier: 
-  mixerParameter: Music
+  mixerParameter: Master
   volume: 1

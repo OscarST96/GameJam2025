@@ -14,7 +14,6 @@ public class Attack : MonoBehaviour
 
     [Header("Color del puño")]
     [SerializeField] private SpriteRenderer attackRenderer;
-    [SerializeField] private ColorsSO colorData;
 
     private Vector3 originalScale;
     private bool isAttacking = false;
@@ -32,8 +31,6 @@ public class Attack : MonoBehaviour
 
         attackGO.transform.localScale = originalScale;
         attackGO.transform.localPosition = facingRight ? rightOffset : leftOffset;
-
-        attackRenderer.color = colorData.currentColor;
 
         float direction = facingRight ? 1f : -1f;
 

@@ -38,5 +38,5 @@ public class Scenes : MonoBehaviour
         panelMenu.SetActive(true);
         panelOpciones.SetActive(false);
         panelCreditos.SetActive(false);
-    }
+    }  
 }

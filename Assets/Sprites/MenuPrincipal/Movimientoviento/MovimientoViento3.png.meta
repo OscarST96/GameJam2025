@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 416a3c76ab7148a488fbf7ad9b2c6b98
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7802671090760789908
+    second: MovimientoViento3_0
+  - first:
+      213: 1899116771691357093
+    second: MovimientoViento3_1
+  - first:
+      213: 3989515690559525381
+    second: MovimientoViento3_2
+  - first:
+      213: 7513805546731273529
+    second: MovimientoViento3_3
+  - first:
+      213: 6490188962183144985
+    second: MovimientoViento3_4
+  - first:
+      213: -110159314070334046
+    second: MovimientoViento3_5
+  - first:
+      213: 6508513169896270124
+    second: MovimientoViento3_6
+  - first:
+      213: -699493150876231049
+    second: MovimientoViento3_7
+  - first:
+      213: -2813135220374603135
+    second: MovimientoViento3_8
+  - first:
+      213: 463237976689933858
+    second: MovimientoViento3_9
+  - first:
+      213: -2866410867519910128
+    second: MovimientoViento3_10
+  - first:
+      213: 6417345142312240769
+    second: MovimientoViento3_11
+  - first:
+      213: 4971760307293341080
+    second: MovimientoViento3_12
+  - first:
+      213: -4757659534808800102
+    second: MovimientoViento3_13
+  - first:
+      213: -7811926371368560432
+    second: MovimientoViento3_14
+  - first:
+      213: 7272386402047724425
+    second: MovimientoViento3_15
+  - first:
+      213: 5150394362363364290
+    second: MovimientoViento3_16
+  - first:
+      213: -5279989201709314454
+    second: MovimientoViento3_17
+  - first:
+      213: -4125110047223370417
+    second: MovimientoViento3_18
+  - first:
+      213: 3129790018804253466
+    second: MovimientoViento3_19
+  - first:
+      213: -3512017075257552030
+    second: MovimientoViento3_20
+  - first:
+      213: -5266197792773399259
+    second: MovimientoViento3_21
+  - first:
+      213: 8854270237049538126
+    second: MovimientoViento3_22
+  - first:
+      213: -1594105343001514429
+    second: MovimientoViento3_23
+  - first:
+      213: -3194411862567023568
+    second: MovimientoViento3_24
+  - first:
+      213: 181505570397842131
+    second: MovimientoViento3_25
+  - first:
+      213: 4508026135424808779
+    second: MovimientoViento3_26
+  - first:
+      213: -2859686767274483909
+    second: MovimientoViento3_27
+  - first:
+      213: 3235089861479061419
+    second: MovimientoViento3_28
+  - first:
+      213: -1722229382239104372
+    second: MovimientoViento3_29
+  - first:
+      213: 7256332349572925798
+    second: MovimientoViento3_30
+  - first:
+      213: -6462212248763078745
+    second: MovimientoViento3_31
+  - first:
+      213: -1904626845084257415
+    second: MovimientoViento3_32
+  - first:
+      213: -7622420138857178139
+    second: MovimientoViento3_33
+  - first:
+      213: 8136665274806970961
+    second: MovimientoViento3_34
+  - first:
+      213: 899429451260021997
+    second: MovimientoViento3_35
+  - first:
+      213: 1227289528209445277
+    second: MovimientoViento3_36
+  - first:
+      213: 2789054711741064824
+    second: MovimientoViento3_37
+  - first:
+      213: 6007446700601326195
+    second: MovimientoViento3_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MovimientoViento3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1419
+        width: 111
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49fa1084408a84c60800000000000000
+      internalID: 7802671090760789908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1469
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a366a354a40b5a10800000000000000
+      internalID: 1899116771691357093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1529
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502d5a9126b9d5730800000000000000
+      internalID: 3989515690559525381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_3
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1489
+        width: 72
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93df64cb556664860800000000000000
+      internalID: 7513805546731273529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_4
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1489
+        width: 112
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91666108978c11a50800000000000000
+      internalID: 6490188962183144985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_5
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1359
+        width: 172
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5132000b2a87ef0800000000000000
+      internalID: -110159314070334046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_6
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1449
+        width: 72
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c296e939e32e25a50800000000000000
+      internalID: 6508513169896270124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_7
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1339
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a14337fa6ea46f0800000000000000
+      internalID: -699493150876231049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_8
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1299
+        width: 82
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a7e64fb6cb5f8d0800000000000000
+      internalID: -2813135220374603135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_9
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1329
+        width: 72
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ef2174c70cd6600800000000000000
+      internalID: 463237976689933858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_10
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1309
+        width: 112
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f082db0867838d0800000000000000
+      internalID: -2866410867519910128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_11
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1309
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1868998086dfe0950800000000000000
+      internalID: 6417345142312240769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_12
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1269
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8954b9078ad3ff440800000000000000
+      internalID: 4971760307293341080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_13
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1319
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94a8793cd569fdb0800000000000000
+      internalID: -4757659534808800102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 899
+        width: 181
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d81217ca56769390800000000000000
+      internalID: -7811926371368560432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_15
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 1289
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b8f63e6e4bce460800000000000000
+      internalID: 7272386402047724425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_16
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1239
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c3c7d57260e97740800000000000000
+      internalID: 5150394362363364290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_17
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1239
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ec73eabc5b9b6b0800000000000000
+      internalID: -5279989201709314454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_18
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 909
+        width: 72
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d2bdf844aa0c6c0800000000000000
+      internalID: -4125110047223370417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_19
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 649
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a130464907f3f6b20800000000000000
+      internalID: 3129790018804253466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_20
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 649
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263da28d31fc24fc0800000000000000
+      internalID: -3512017075257552030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_21
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 709
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d9bcc4205bae6b0800000000000000
+      internalID: -5266197792773399259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_22
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 709
+        width: 52
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46c6a06edfa0ea70800000000000000
+      internalID: 8854270237049538126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_23
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 569
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ea7dfe2a990e9e0800000000000000
+      internalID: -1594105343001514429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_24
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 529
+        width: 102
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c0661f55b2ba3d0800000000000000
+      internalID: -3194411862567023568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_25
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 629
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da6158ca56d48200800000000000000
+      internalID: 181505570397842131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_26
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 599
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b473c28b2e9bf8e30800000000000000
+      internalID: 4508026135424808779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_27
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 579
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f18b3590a5058d0800000000000000
+      internalID: -2859686767274483909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_28
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 579
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba75de9b61955ec20800000000000000
+      internalID: 3235089861479061419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_29
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 559
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82d5e960896918e0800000000000000
+      internalID: -1722229382239104372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_30
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 559
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669487483dba3b460800000000000000
+      internalID: 7256332349572925798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_31
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 549
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a76c41b23c9156a0800000000000000
+      internalID: -6462212248763078745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_32
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 469
+        width: 102
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973741db9f76195e0800000000000000
+      internalID: -1904626845084257415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_33
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 539
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb52aed449b73690800000000000000
+      internalID: -7622420138857178139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_34
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 469
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a202125fd3be070800000000000000
+      internalID: 8136665274806970961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_35
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 499
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: decc0ee025a6b7c00800000000000000
+      internalID: 899429451260021997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_36
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 409
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d911b7dc255380110800000000000000
+      internalID: 1227289528209445277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_37
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 459
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876a478bb76b4b620800000000000000
+      internalID: 2789054711741064824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MovimientoViento3_38
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 379
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a3f6402fcbe5350800000000000000
+      internalID: 6007446700601326195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MovimientoViento3_0: 7802671090760789908
+      MovimientoViento3_1: 1899116771691357093
+      MovimientoViento3_10: -2866410867519910128
+      MovimientoViento3_11: 6417345142312240769
+      MovimientoViento3_12: 4971760307293341080
+      MovimientoViento3_13: -4757659534808800102
+      MovimientoViento3_14: -7811926371368560432
+      MovimientoViento3_15: 7272386402047724425
+      MovimientoViento3_16: 5150394362363364290
+      MovimientoViento3_17: -5279989201709314454
+      MovimientoViento3_18: -4125110047223370417
+      MovimientoViento3_19: 3129790018804253466
+      MovimientoViento3_2: 3989515690559525381
+      MovimientoViento3_20: -3512017075257552030
+      MovimientoViento3_21: -5266197792773399259
+      MovimientoViento3_22: 8854270237049538126
+      MovimientoViento3_23: -1594105343001514429
+      MovimientoViento3_24: -3194411862567023568
+      MovimientoViento3_25: 181505570397842131
+      MovimientoViento3_26: 4508026135424808779
+      MovimientoViento3_27: -2859686767274483909
+      MovimientoViento3_28: 3235089861479061419
+      MovimientoViento3_29: -1722229382239104372
+      MovimientoViento3_3: 7513805546731273529
+      MovimientoViento3_30: 7256332349572925798
+      MovimientoViento3_31: -6462212248763078745
+      MovimientoViento3_32: -1904626845084257415
+      MovimientoViento3_33: -7622420138857178139
+      MovimientoViento3_34: 8136665274806970961
+      MovimientoViento3_35: 899429451260021997
+      MovimientoViento3_36: 1227289528209445277
+      MovimientoViento3_37: 2789054711741064824
+      MovimientoViento3_38: 6007446700601326195
+      MovimientoViento3_4: 6490188962183144985
+      MovimientoViento3_5: -110159314070334046
+      MovimientoViento3_6: 6508513169896270124
+      MovimientoViento3_7: -699493150876231049
+      MovimientoViento3_8: -2813135220374603135
+      MovimientoViento3_9: 463237976689933858
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

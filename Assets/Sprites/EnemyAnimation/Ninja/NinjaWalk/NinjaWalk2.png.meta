@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NinjaWalk2_0: 9205546156440389534
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

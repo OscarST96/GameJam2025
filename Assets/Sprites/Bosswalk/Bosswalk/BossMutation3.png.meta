@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BossMutation3_0: -8945565668067760710
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

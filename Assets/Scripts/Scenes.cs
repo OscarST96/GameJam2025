@@ -8,7 +8,6 @@ public class Scenes : MonoBehaviour
     [SerializeField] private GameObject panelCreditos;
     private void Start()
     {
-        AudioManager.Instance.PlayMusic(0);
         panelMenu.SetActive(true);
         panelOpciones.SetActive(false);
         panelCreditos.SetActive(false);

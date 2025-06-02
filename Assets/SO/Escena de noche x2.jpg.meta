@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Escena de noche x2_0: -4206872255517385510
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AuraSprite3_0: 4984097012675991743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

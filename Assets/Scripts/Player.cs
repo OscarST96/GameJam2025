@@ -117,22 +117,31 @@ public class Player : MonoBehaviour
     private void OnAttack()
     {
         attackScript.DoAttack(facingRight);
-        if (!isAttacking)
+        float attackValue = Random.value;
+        if (attackValue >= 0.5f)
         {
-            StartCoroutine(PlayAnimationAndWait("Attack"));
+            if (!isAttacking)
+                StartCoroutine(PlayAnimationAndWait("Attack"));
         }
+        else
+        {
+            if (!isAttacking)
+                StartCoroutine(PlayAnimationAndWait("Kick"));
+        }
+        
+
     }
     public IEnumerator PlayAnimationAndWait(string animationName)
     {
         isAttacking = true;
-        animator.SetBool("Attack", true);
+        animator.SetBool(animationName, true);
         speed = 0f;
 
         yield return new WaitForSeconds(0.5f);
 
         speed = 5f;
         isAttacking = false;
-        animator.SetBool("Attack", false);
+        animator.SetBool(animationName, false);
     }
 
     public void ReceiveKnockback(Vector2 direction, float distance, float duration)

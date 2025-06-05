@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     }
     public void Opciones()
     {
+        AudioManager.instance.PlaySFX(0);
         panelOpciones.SetActive(true);
         Time.timeScale = 0f;
     }

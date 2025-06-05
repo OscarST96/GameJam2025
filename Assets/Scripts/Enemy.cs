@@ -45,8 +45,6 @@ public class Enemy : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Golpeó al jugador");
-
             Vector2 knockbackDir = (collision.transform.position - transform.position).normalized;
             float knockbackDistance = 1.5f;
             float knockbackDuration = 0.2f;

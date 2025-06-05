@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2af7240f408257442b717d8879049688
+guid: 620e8c886de989147a5a5bbe19fa7a99
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8376987673618409728
-    second: VignettePNG_0
+      213: 5179448993183982278
+    second: boton pausa_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,7 +110,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VignettePNG_0
+      name: boton pausa_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1200
-        height: 800
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 009e9dde7e9014470800000000000000
-      internalID: 8376987673618409728
+      spriteID: 6c26cfada6911e740800000000000000
+      internalID: 5179448993183982278
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      VignettePNG_0: 8376987673618409728
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1447,7 +1447,7 @@ GameObject:
   - component: {fileID: 882862630}
   - component: {fileID: 882862629}
   m_Layer: 0
-  m_Name: ManagerScene
+  m_Name: MenuManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4218,37 +4218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b41d5f6abeb6b41840d8b0865b0a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1782969735
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1782969737}
-  m_Layer: 0
-  m_Name: MenuManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1782969737
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782969735}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -123, y: 501.22235, z: 4.7523737}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1790866326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4959,7 +4928,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3a98ecb97bc004f4ea1031e24d1788ca, type: 3}
   sfxClips:
   - {fileID: 8300000, guid: 24233d86c139ee34196cdca0ce14f643, type: 3}
-  songIndex: 0
+  - {fileID: 8300000, guid: a0be8829b4ccde44e84ebadb65afb3f5, type: 3}
 --- !u!4 &1977735516
 Transform:
   m_ObjectHideFlags: 0
@@ -5171,7 +5140,6 @@ SceneRoots:
   - {fileID: 1417405227}
   - {fileID: 1815648531}
   - {fileID: 882862630}
-  - {fileID: 1782969737}
   - {fileID: 1977735516}
   - {fileID: 1169194884}
   - {fileID: 104103134}

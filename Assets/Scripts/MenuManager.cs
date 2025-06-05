@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Scenes : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
     [SerializeField] private GameObject panelMenu;
     [SerializeField] private GameObject panelOpciones;
     [SerializeField] private GameObject panelCreditos;
     private void Start()
     {
+        AudioManager.instance.PlayMusic(0);
         panelMenu.SetActive(true);
         panelOpciones.SetActive(false);
         panelCreditos.SetActive(false);

@@ -3,6 +3,21 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     [Header("Mixer")]
     [SerializeField] private AudioMixer audioMixer;
 
@@ -18,13 +33,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip[] musicClips;
     [SerializeField] private AudioClip[] sfxClips;
 
-    [Header("Index")]
-    [SerializeField] private int songIndex;
 
-    private void Start()
-    {
-        PlayMusic(songIndex);
-    }
     public void UpdateVolume(AudioSettingSO setting, float value)
     {
         setting.volume = value;

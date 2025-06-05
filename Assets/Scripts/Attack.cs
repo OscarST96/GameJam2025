@@ -4,53 +4,47 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     [Header("Ataque")]
-    [SerializeField] private GameObject attackGO;
-    [SerializeField] private float attackScale = 2f;
+    [SerializeField] private GameObject attackPrefab;
+    [SerializeField] private float moveDistance;
     [SerializeField] private float attackDuration = 0.2f;
 
     [Header("Offsets centrados")]
-    private Vector3 rightOffset = new Vector3(0f, 0f, 0f);
-    private Vector3 leftOffset = new Vector3(0f, 0f, 0f);
-
-    [Header("Color del puño")]
-    [SerializeField] private SpriteRenderer attackRenderer;
-
-    private Vector3 originalScale;
-    private bool isAttacking = false;
-
-    private void Start()
-    {
-        originalScale = attackGO.transform.localScale;
-    }
+    private Vector3 startOffset = new Vector3(0f, 0f, 0f);
 
     public void DoAttack(bool facingRight)
     {
-        if (isAttacking) return;
-
-        isAttacking = true;
-
-        attackGO.transform.localScale = originalScale;
-        attackGO.transform.localPosition = facingRight ? rightOffset : leftOffset;
-
         float direction = facingRight ? 1f : -1f;
 
-        attackGO.SetActive(true);
+        Vector3 initialPos = transform.position + new Vector3(startOffset.x * direction, startOffset.y, startOffset.z);
 
-        // Nueva escala destino en X y Y
-        Vector3 targetScale = new Vector3(
-            originalScale.x * attackScale * direction,
-            originalScale.y * attackScale,
-            originalScale.z
-        );
+        GameObject instance = Instantiate(attackPrefab, initialPos, Quaternion.identity, transform);
 
-        // Animamos en ambos ejes (X y Y)
-        attackGO.transform.DOScale(targetScale, attackDuration)
+        instance.transform.localScale = Vector3.one * 0.1f;
+
+        if (!facingRight)
+        {
+            Vector3 flipped = instance.transform.localScale;
+            flipped.x *= -1;
+            instance.transform.localScale = flipped;
+        }
+
+        Vector3 targetPos = instance.transform.localPosition + new Vector3(moveDistance * direction, 0f, 0f);
+        Vector3 punchScale = Vector3.one * 0.8f;
+        Vector3 finalScale = Vector3.one * 0.2f;
+
+        // Animaciones
+        instance.transform.DOScale(punchScale, 0.1f).SetEase(Ease.InQuint);
+        instance.transform.DOLocalMove(targetPos, attackDuration)
             .SetEase(Ease.OutBounce)
             .OnComplete(() =>
             {
-                attackGO.transform.localScale = originalScale;
-                attackGO.SetActive(false);
-                isAttacking = false;
+                instance.transform.DOScale(finalScale, 0.3f)
+                    .SetEase(Ease.InQuad)
+                    .OnComplete(() =>
+                    {
+                        Destroy(instance);
+                    });
             });
     }
 }
+

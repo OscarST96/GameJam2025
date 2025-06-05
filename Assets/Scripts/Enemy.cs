@@ -52,9 +52,6 @@ public class Enemy : MonoBehaviour
             float knockbackDuration = 0.2f;
 
             collision.gameObject.GetComponent<Player>().ReceiveKnockback(knockbackDir, knockbackDistance, knockbackDuration);
-
-            isBeingDestroyed = true;
-            transform.DOScale(transform.localScale * scaleOnHit, scaleTime).OnComplete(() => Destroy(gameObject));
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -63,12 +60,12 @@ public class Enemy : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Punch"))
         {
-            Debug.Log("puñetazo");
             isBeingDestroyed = true;
 
             ScoreManager.Instance.AddScore(100);
 
-            Destroy(gameObject);
+            transform.DOScale(transform.localScale * scaleOnHit, scaleTime).OnComplete(() => Destroy(gameObject));
+            AudioManager.instance.PlaySFX(1);
         }
     }
     public void Init(Transform target)

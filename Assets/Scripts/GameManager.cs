@@ -3,9 +3,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject panelOpciones;
+    [SerializeField] private int levelIndex;
 
     private void Start()
     {
+        AudioManager.instance.PlayMusic(levelIndex);
         panelOpciones.SetActive(false);
     }
     public void Opciones()

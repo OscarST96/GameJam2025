@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour
         if (isBeingDestroyed) return;
 
         if (collision.gameObject.CompareTag("Player"))
-        {
+        {                      
             Vector2 knockbackDir = (collision.transform.position - transform.position).normalized;
             float knockbackDistance = 1.5f;
             float knockbackDuration = 0.2f;
@@ -58,12 +58,20 @@ public class Enemy : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Punch"))
         {
-            isBeingDestroyed = true;
+            Color playerColor = collision.gameObject.GetComponent<GoAttack>().attackColor;
 
-            ScoreManager.Instance.AddScore(100);
+            if (playerColor == GetCurrentColor())
+            {
+                Debug.Log(playerColor);
+                isBeingDestroyed = true;
 
-            transform.DOScale(transform.localScale * scaleOnHit, scaleTime).OnComplete(() => Destroy(gameObject));
-            AudioManager.instance.PlaySFX(1);
+                ScoreManager.Instance.AddScore(100);
+
+                transform.DOScale(transform.localScale * scaleOnHit, scaleTime).OnComplete(() => Destroy(gameObject));
+                AudioManager.instance.PlaySFX(1);
+            }
+            else 
+                return;
         }
     }
     public void Init(Transform target)

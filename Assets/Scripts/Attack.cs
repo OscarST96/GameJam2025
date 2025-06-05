@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
+    [SerializeField] private Player player;
+
     [Header("Ataque")]
     [SerializeField] private GameObject attackPrefab;
     [SerializeField] private float moveDistance;

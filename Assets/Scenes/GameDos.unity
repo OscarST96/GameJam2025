@@ -267,8 +267,8 @@ MonoBehaviour:
   whiteLife: 5
   blackLife: 5
   playerColor: {fileID: 11400000, guid: c13871e85ba4d8b4dba8f6fc88667ca8, type: 2}
-  whiteLifeBar: {fileID: 0}
-  blackLifeBar: {fileID: 0}
+  whiteLifeBar: {fileID: 1608694101}
+  blackLifeBar: {fileID: 139757342}
 --- !u!114 &18942899
 MonoBehaviour:
   m_ObjectHideFlags: 0

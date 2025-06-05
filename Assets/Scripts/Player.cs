@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private float invulnerableTime = 1f;
     [SerializeField] private float blinkInterval = 0.1f;
-    [SerializeField] private SpriteRenderer aura;
+    public SpriteRenderer aura;
     private bool isInvulnerable = false;
 
     private void Awake()

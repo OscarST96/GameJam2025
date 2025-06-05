@@ -29,19 +29,13 @@ public class PlayerLife : MonoBehaviour
 
             if (playerCurrentColor == Color.white)
             {
-                if (enemyColor == Color.white)
-                {
-                    whiteLife = whiteLife + 1;
-                    blackLife = blackLife - 1; 
-                }
+                whiteLife = whiteLife + 1;
+                blackLife = blackLife - 1;
             }
             else if (playerCurrentColor == Color.black)
             {
-                if (enemyColor == Color.black)
-                {
-                    blackLife = blackLife + 1;
-                    whiteLife = whiteLife - 1;
-                }
+                blackLife = blackLife + 1;
+                whiteLife = whiteLife - 1;
             }
             UpdateLifeBars();
 

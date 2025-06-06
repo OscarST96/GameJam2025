@@ -2506,7 +2506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 44.997986, y: -14}
+  m_AnchoredPosition: {x: 44.998047, y: -14}
   m_SizeDelta: {x: -717.02, y: -273.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200482888
@@ -2703,7 +2703,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 45, y: -14.002014}
+  m_AnchoredPosition: {x: 45, y: -14.001953}
   m_SizeDelta: {x: -717.0234, y: -273.6569}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1305474368
@@ -4131,7 +4131,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GameUno
+          m_StringArgument: Tutorial
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1977735515}
@@ -4926,6 +4926,8 @@ MonoBehaviour:
   musicClips:
   - {fileID: 8300000, guid: 5bf3701a7b2bfd2449da678198413268, type: 3}
   - {fileID: 8300000, guid: 3a98ecb97bc004f4ea1031e24d1788ca, type: 3}
+  - {fileID: 8300000, guid: 12e64842733c3c745b9307ab86379b6d, type: 3}
+  - {fileID: 8300000, guid: 8f849fd4cedae1b4797889ea57096eba, type: 3}
   sfxClips:
   - {fileID: 8300000, guid: 24233d86c139ee34196cdca0ce14f643, type: 3}
   - {fileID: 8300000, guid: a0be8829b4ccde44e84ebadb65afb3f5, type: 3}
